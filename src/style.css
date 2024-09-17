@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+
+}
+
+.app {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-item {
+
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.image-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+    background-color: red;
+    cursor: pointer;
+}
